@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+html, body{
+    height:100%;
+}
+
+.chat-content {
+    height: 90%;
+    width: auto;
+    overflow-y: scroll;
+    background: #2e3236;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+
+.line {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile{
+    height: 40px;
+}
+
+.name{
+    margin-left : 10px;
+    font-size: 18px;
+    color : whitesmoke;
+}
+.my{
+    margin-left: auto;
+    margin-right:5px;
+}
+.profile-image{
+    border-radius:50%;
+    width:40px;
+    margin-left:10px;
+    margin-bottom:5px;
+}
+.chat-box {
+    background: #eee;
+    padding: 5px;
+    max-width: 30%;
+    margin-bottom:20px;
+    margin-left:20px;
+    
+}
+.mine {
+    margin-left: auto;
+    margin-right:2px;
+    background: #FFCD00;
+}
+
+.input{
+    display:flex;
+    padding: 1px;
+    height: 6%;
+    background:#d8d8d8
+}
+
+.input-box{
+    width: 100%;
+    border:none;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.send-box{
+    width:100px;
+    background: #FFCD00;
+    border:none;
+    font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius:10%;
+}
+
+.alert{
+    display:none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
