@@ -1,5 +1,7 @@
 //npm install express request openai 터미널에 입력 필요!
 
+import config from "apikeys.js"
+
 var express = require('express');
 var app = express();
 var request = require('request');
@@ -9,7 +11,7 @@ app.use(express.static('public'))
 var { OpenAIApi, Configuration } = require('openai');
 
 let config = new Configuration({
-  apiKey: "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",  //cgpt api key
+  apiKey: config.GPT_API_KEY,  //cgpt api key
 });
 let openai = new OpenAIApi(config);
 
@@ -17,7 +19,7 @@ app.get('/', function(req,res){
   res.sendFile(__dirname + '/index.html')
 })
 
-var client_id = 'gaxoMCSYIl81p_wLd4nv'; //파파고 api key
+var client_id = config.PAPAGO_API_KEY; //파파고 api key
 var client_secret = 'iyvwDj8hIE';
 
 app.get('/translate', function (req, res) {
